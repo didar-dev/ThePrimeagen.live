@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <div className="hidden lg:block w-1/2 min-h-screen relative">
         <Image
-          src="/hero2.webp"
+          src="/hero3.webp"
           alt="The Primeagen"
           fill={true}
           priority={true}
