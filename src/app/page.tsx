@@ -32,7 +32,7 @@ export default function Home() {
             ThePrimeagen
           </h1>
           <p className="text-lg md:text-2xl text-white text-center">
-            BTW, he works at Netflix
+            A legend who works at Netflix and streams on Twitch.
           </p>
         </div>
       </div>
