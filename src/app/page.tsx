@@ -28,30 +28,24 @@ export default function Home() {
         />
         <div className="absolute hidden lg:block inset-0 bg-gradient-to-r from-black to-transparent"></div>
       </div>
-      <Image
-        src="/teej.png"
-        alt="The Primeagen"
-        width={400}
-        height={400}
-        priority={true}
-        style={{
-          userSelect: "none",
-        }}
-        draggable={false}
-        className="absolute bottom-0 left-0 w-[270px] lg:w-[400px] object-contain"
-      />
-      <Image
-        src="/hero.webp"
-        alt="The Primeagen"
-        width={800}
-        height={700}
-        priority={true}
-        style={{
-          userSelect: "none",
-        }}
-        draggable={false}
-        className="absolute bottom-0 right-0 w-[270px] lg:w-[400px] object-contain"
-      />
+      <div className="absolute justify-between w-full bottom-0 items-end left-0 flex flex-row gap-4">
+        {Images.map((image, index): any => (
+          <Image
+            src={image}
+            alt="The Primeagen"
+            width={800}
+            height={700}
+            priority={true}
+            style={{
+              userSelect: "none",
+            }}
+            draggable={false}
+            className="w-[100px] lg:w-[400px] object-contain"
+          />
+        ))}
+      </div>
     </main>
   );
 }
+
+const Images = ["/teej.png", "/hero.webp", "/melkey.png"];
